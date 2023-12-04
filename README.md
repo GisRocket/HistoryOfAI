@@ -1,2 +1,2 @@
-# ChatPC
-Chat PC is chatbot with knowledge for computers.
+# History of AI
+Storymap with knowledge for computers.
