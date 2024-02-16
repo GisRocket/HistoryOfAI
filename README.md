@@ -1,4 +1,4 @@
-# History of AI (project Nº 232)
+# History of AI (project Nº: 232)
 Storymap with knowledge for computers.
 
 https://storymaps.com/stories/19dd8227c3f44494888868ca764bc69d
