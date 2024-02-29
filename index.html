@@ -1,19 +1,117 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-  		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-		<title>Chat PC</title>
-  		<link rel="icon" type="image/x-icon" href="chatbot/avatar.ico">
-  		<link rel="stylesheet" href="styles.css">
-	</head>
-	
-	<body>
-		<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-		<script src="https://mediafiles.botpress.cloud/deb9dbcc-f141-4e54-9776-2786df327067/webchat/config.js" defer></script>
-	</body>
-	</html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Chat PC</title>
+  <link rel="icon" type="image/x-icon" href="chatbot/avatar.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/deb9dbcc-f141-4e54-9776-2786df327067/webchat/config.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="menu">
+    <a onclick="togglePopup('popup-1')" href="#one">1</a>
+    <a onclick="togglePopup('popup-2')" href="#two">2</a>
+    <a onclick="togglePopup('popup-3')" href="#three">3</a>
+    <a onclick="togglePopup('popup-4')" href="#four">4</a>
 
 
+    <button id="toggle-btn"><i class="fa fa-info"></i></button>
+
+  </div>
+
+  <div class="popup" id="popup-1">
+    <div class="content">
+      <p>Предоставяне на бърз и лесен достъп до образователни ресурси, материали и информация.</p>
+      <div class="close-btn" onclick="closeAllPopups()"><a href="#close">x</a></div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-2">
+    <div class="content">
+      <p>Автоматизиране на отговори на често задавани въпроси и анализиране на търсенията.</p>
+
+      <div class="close-btn" onclick="closeAllPopups()"><a href="#close">x</a></div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-3">
+    <div class="content">
+      <p>Предоставяне на персонализирана подкрепа и стимулиране на самостоятелното учене.
+      </p>
+
+      <div class="close-btn" onclick="closeAllPopups()"><a href="#close">x</a></div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-4">
+    <div class="content">
+      <p>Възможност за интегриране с други чатботове и образователни платформи.</p>
+
+      <div class="close-btn" onclick="closeAllPopups()"><a href="#close">x</a></div>
+    </div>
+  </div>
+
+  <script>
+
+    let toggleBtn = document.getElementById("toggle-btn");
+    let menuItems = document.querySelectorAll(".menu a");
+    let menuActive = false;
+
+    toggleBtn.addEventListener("click", () => {
+
+      if (!menuActive) {
+        menuItems[0].style.transform = "translate(150px,0)";
+        menuItems[1].style.transform = "translate(150px,90px)";
+        menuItems[2].style.transform = "translate(90px,150px)";
+        menuItems[3].style.transform = "translate(0,150px)";
+        menuActive = true;
+        toggleBtn.classList.add("activeinit");
+
+      } else {
+        menuItems.forEach((menuItem) => {
+          menuItem.style.transform = "translate(0,0)";
+        });
+
+        menuActive = false;
+        toggleBtn.classList.remove("activeinit");
+      }
+    });
+
+    function togglePopup(popupId) {
+      const popup = document.getElementById(popupId);
+
+      if (!popup.classList.contains("active")) {
+        const popups = document.querySelectorAll(".popup");
+        popups.forEach((p) => {
+          p.style.zIndex = 9998;
+        });
+        popup.style.zIndex = 9999;
+      }
+
+      popup.classList.toggle("active");
+    }
+
+
+    function closeAllPopups() {
+      const popups = document.querySelectorAll(".popup");
+      popups.forEach((popup) => {
+        popup.classList.remove("active");
+        popup.style.zIndex = 9999; // 
+      });
+    }
+
+  </script>
+</body>
+
+</html>
