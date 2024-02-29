@@ -1,4 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
 body {
+
   background: url("https://www.mediafire.com/convkey/221d/tia1abtc2ro0kem9g.jpg");
+
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+a {
+
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+
+}
+
+p {
+  font-family: "Helvetica", Sans-Serif;
+  color: #484847;
+  font-size: 4.5vmin;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 12vmin;
+  padding-bottom: 10vmin;
+
+}
+
+.popup .content {
+
+  width: 45%;
+  padding-top: 500px;
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%) scale(0);
+  padding: 25px;
+  border-radius: 20px;
+  background: white;
+  position: absolute;
+  inline-size: min-content;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.second-button:active {
+  background: linear-gradient(145deg, #222222, #292929);
+  box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
+  border: none;
+  outline: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu a {
+  background-color: #b4e64c;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  color: #f8fefe;
+  text-decoration: none;
+  top: 30px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+.menu a:hover {
+  background-color: #484847;
+
+}
+
+#toggle-btn {
+  background-color: #b4e64c;
+  color: #f8fefe;
+  height: 80px;
+  width: 80px;
+  border: none;
+  font-size: 40px;
+  top: 15px;
+  left: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 9999;
+
+  box-shadow: 1px 1px 1px 0px #484847;
+  filter: drop-shadow(1px 1px 1px #484847);
+}
+
+#toggle-btn,
+.menu a {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.activeinit {
+  transform: rotate(45deg);
+}
+
+.popup .close-btn {
+  color: #121315;
+  font-size: 20px;
+
+  border-radius: 50%;
+  background: #484847;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  padding: 2px 5px 7px 5px;
+  height: 30px;
+  box-shadow: 1px 1px 2px #484847,
+    -1px -1px 2px #484847;
+  text-align: center;
+  line-height: normal;
+}
+
+.close-btn:hover {
+  background-color: #b4e64c;
 }
