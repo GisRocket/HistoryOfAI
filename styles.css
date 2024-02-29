@@ -48,7 +48,7 @@ p {
   border-radius: 20px;
   background: white;
   position: absolute;
-  inline-size: min-content;
+  inline-size: inherit;
 }
 
 .popup.active .content {
