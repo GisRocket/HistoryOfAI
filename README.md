@@ -1,7 +1,6 @@
 # History of AI
 Storymap with knowledge for computers.
-автор - Михаил Лазаров 6. клас
-консултант - Мартин Бялов
+автор - Михаил Лазаров 7. клас
 
 линк за достъп до проекта - https://storymaps.com/stories/19dd8227c3f44494888868ca764bc69d
 Github директория - https://github.com/GisRocket/HistoryOfAI
