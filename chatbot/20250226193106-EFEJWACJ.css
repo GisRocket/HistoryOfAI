@@ -1,0 +1,7 @@
+/* Your CSS styles here */
+ .bpContainer{width: 100%; /* Ширината е пропорционална на родителя */
+    aspect-ratio: 2 / 1; /* Задайте пропорции ширина:височина (2:1) */
+    display: flex;}
+  .bpHeaderContentTitle{
+    font-weight: bold;
+  }
