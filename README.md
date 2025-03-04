@@ -2,7 +2,7 @@
 Storymap with knowledge for computers.
 автор - Михаил Лазаров 7. клас
 
-линк за достъп до проекта - https://storymaps.com/stories/19dd8227c3f44494888868ca764bc69d
+линк за достъп до проекта - https://arcg.is/Ginm80
 Github директория - https://github.com/GisRocket/HistoryOfAI
 
 
