@@ -1,6 +1,6 @@
 # History of AI
 Storymap with knowledge for computers.
-автор - Михаил Лазаров 7. клас
+Aвтор - Михаил Лазаров 7. клас
 
 линк за достъп до проекта - https://arcg.is/Ginm80
 Github директория - https://github.com/GisRocket/HistoryOfAI
